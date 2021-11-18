@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+/* import "./Message.css";  //если вставить сюда, то тоже работает, но я так поняла, что правильнее - в сам компонент вставлять - ?*/
+import { Message } from "./Message";
 
-function App() {
+const App = () => {
+  const name = "friends";
+  const greet = "Welcome!";
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* {<p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -16,10 +21,12 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a>} */}
+        <h2>Hello, {name}!</h2>
+        <Message greet={greet} />
       </header>
     </div>
   );
-}
+};
 
 export default App;
