@@ -23,7 +23,6 @@ const App = () => {
           Learn React
         </a>} */}
         <h2>Hello, {name}!</h2>
-        {/*  //приветствие */}
         <Message greet={greet} />
       </header>
     </div>
