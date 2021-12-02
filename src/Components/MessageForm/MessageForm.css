@@ -1,0 +1,24 @@
+.message-form {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px;
+}
+
+.message-form__author {
+  max-width: 250px;
+  outline: none;
+}
+
+.message-form__text {
+  height: 60px;
+  resize: none;
+  outline: none;
+}
+
+.message-form__submit {
+  width: 120px;
+  height: 50px;
+  align-self: end;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,22 @@
+.messageList {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+.messageList__area {
+  padding: 10px 25px;
+  margin: 10px 0;
+  background-color: bisque;
+  width: fit-content;
+}
+
+.messageList__author {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.messageList__text {
+  margin: 10px 0;
+  font-size: 12px;
+}
