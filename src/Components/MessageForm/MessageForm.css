@@ -8,6 +8,8 @@
 .message-form__author {
   max-width: 250px;
   outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .message-form__text {
