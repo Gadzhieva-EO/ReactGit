@@ -1,5 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 import "./MessageForm.css";
 
 export const MessageForm = ({ messageList, setMessageList }) => {
@@ -33,18 +36,18 @@ export const MessageForm = ({ messageList, setMessageList }) => {
                 onChange={handleAuthorChange}
                 placeholder="Who are you?"
             />
-            <textarea
+            <TextField
+                required
+                id="outlined-required"
                 className="message-form__text"
+                label="Required"
                 value={messageText}
                 onChange={handleTextChange}
                 placeholder="Put your text"
-            ></textarea>
-            <button
-                className="message-form__submit"
-                type="submit"
-                onClick={handleAdd}
-                value="Send">Send
-            </button>
+            />
+            <Button
+                variant="contained" endIcon={<SendIcon />} onClick={handleAdd}>Send
+            </Button>
         </form>
     );
 };

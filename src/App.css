@@ -29,7 +29,11 @@
 }
 
 .App-main {
-  width: 800px;
+  display: flex;
+}
+
+.ChatList {
+  background-color: cornflowerblue;
 }
 
 @keyframes App-logo-spin {
